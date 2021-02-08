@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  komodo-rtc:
+    build: .
+    image: komodo-rtc:latest
+    container_name: komodo-rtc
+    restart: "always"
+    labels:
+      - "traefik.frontend.rule=Host:rtc.komodo-dev.library.illinois.edu"
+      - "traefik.backend=komodo-rtc"
+      - "traefik.port=9000"
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+    networks: 
+      - proxy
+      - komodo_internal
+
+networks: 
+  proxy:
+    external: true
+  komodo_internal:
+    external: true
