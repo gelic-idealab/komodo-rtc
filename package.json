@@ -1,0 +1,22 @@
+{
+  "name": "komodo-rtc",
+  "version": "1.0.0",
+  "description": "WebRTC signaling server for the Komodo platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelic-idealab/komodo-rtc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gelic-idealab/komodo-rtc/issues"
+  },
+  "homepage": "https://github.com/gelic-idealab/komodo-rtc#readme",
+  "dependencies": {
+    "peer": "^0.6.1"
+  }
+}
